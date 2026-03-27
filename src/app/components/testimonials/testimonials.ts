@@ -47,8 +47,8 @@ export class Testimonials {
       roleBorder: 'rgba(245, 158, 11, 0.3)'
     },
     {
-      quote: 'Compartilho fotos e anotações direto pelo app. Meus clientes adoram a transparência que consigo oferecer agora.',
-      name: 'Camila A.',
+      quote: 'Compartilho fotos, arquivos de projetos e anotações direto pelo app. Meus clientes adoram a transparência que consigo oferecer agora.',
+      name: 'Adriele S.',
       role: 'ARQUITETA',
       initials: 'CA',
       roleColor: '#1E40AF',
