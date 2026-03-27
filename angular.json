@@ -58,6 +58,10 @@
               ],
               "outputHashing": "all"
             },
+            "ghpages": {
+              "outputMode": "static",
+              "baseHref": "/minhaobra-angular/"
+            },
             "development": {
               "optimization": false,
               "extractLicenses": false,

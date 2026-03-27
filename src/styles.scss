@@ -172,6 +172,14 @@ ul, ol {
   from { width: 0; }
 }
 
+// ── Brand name token (matches login screen: Barlow 900, #F0A500) ──
+.brand-name {
+  font-family: var(--font-sans);
+  font-weight: 900;
+  color: #F0A500;
+  letter-spacing: 0.12em;
+}
+
 // ── Hide scrollbar utility ──
 .hide-scrollbar {
   -ms-overflow-style: none;

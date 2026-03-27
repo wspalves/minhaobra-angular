@@ -11,7 +11,7 @@ import { StoreBadges } from '../../shared/store-badges';
       <div class="container">
         <div class="cta-content">
           <h2 appReveal>Comece a gerenciar<br>sua obra hoje.</h2>
-          <p appReveal class="stagger-1">Gratuito. Simples. Para obras e reformas no Brasil.</p>
+          <p appReveal class="stagger-1">Gratuito. Simples. Para realizar seu sonho.</p>
           <div appReveal class="stagger-2">
             <app-store-badges [centered]="true" />
           </div>

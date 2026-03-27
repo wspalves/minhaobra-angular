@@ -15,7 +15,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
                 <path d="M17.64 15L22 10.64"/>
                 <path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 00-3.94-1.64H9l.92.82A6.18 6.18 0 0112 8.4v1.56l2 2h2.47l2.26 1.91"/>
               </svg>
-              <span>Reformei</span>
+              <span class="brand-name">Reformei</span>
             </div>
             <p>O app de gestão de obras e reformas mais simples do Brasil.</p>
           </div>
@@ -66,7 +66,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
         </div>
 
         <div class="footer-bottom">
-          <p>&copy; {{ year }} Reformei. Todos os direitos reservados.</p>
+          <p>&copy; {{ year }} <span class="brand-name">Reformei</span>. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
