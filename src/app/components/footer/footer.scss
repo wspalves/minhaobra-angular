@@ -1,0 +1,105 @@
+footer {
+  background: #1C1A17;
+  color: #fff;
+  padding: 4rem 0 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+// ── Brand ──
+.footer-brand {
+  p {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+    margin-top: 1rem;
+    max-width: 260px;
+  }
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+
+  span {
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: #fff;
+    letter-spacing: -0.02em;
+  }
+}
+
+// ── Columns ──
+.footer-col {
+  h4 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  a {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.2s;
+
+    &:hover { color: #fff; }
+  }
+}
+
+// ── Social ──
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.2s;
+
+    &:hover { color: var(--primary); }
+  }
+}
+
+// ── Bottom ──
+.footer-bottom {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}

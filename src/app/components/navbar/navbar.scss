@@ -1,0 +1,166 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1.25rem 0;
+  transition: all 0.3s ease;
+
+  &.scrolled {
+    background: rgba(245, 239, 230, 0.9);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    padding: 0.75rem 0;
+  }
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// ── Logo ──
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-10);
+  padding: 0.375rem;
+  border-radius: 0.5rem;
+  color: var(--primary);
+}
+
+.logo-name {
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--foreground);
+  letter-spacing: -0.02em;
+}
+
+// ── Desktop Nav Pill ──
+.nav-pill {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+  background: rgba(254, 250, 244, 0.8);
+  backdrop-filter: blur(8px);
+  padding: 0.625rem 1.5rem;
+  border-radius: var(--r-full);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+  button {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--muted-fg);
+    transition: color 0.2s;
+
+    &:hover { color: var(--primary); }
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+// ── Desktop CTA ──
+.nav-cta {
+  display: none;
+  background: var(--primary);
+  color: var(--primary-fg);
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #b06500;
+    box-shadow: 0 4px 16px var(--primary-30);
+    transform: translateY(-1px);
+  }
+
+  &:active { transform: translateY(0); }
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+// ── Hamburger ──
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0.5rem;
+
+  span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--foreground);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+  }
+
+  &.open {
+    span:nth-child(1) { transform: rotate(45deg) translate(3px, 5px); }
+    span:nth-child(2) { opacity: 0; }
+    span:nth-child(3) { transform: rotate(-45deg) translate(3px, -5px); }
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+// ── Mobile Menu ──
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  button {
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--foreground);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(212, 201, 181, 0.5);
+  }
+
+  .mobile-cta {
+    margin-top: 0.5rem;
+    background: var(--primary);
+    color: var(--primary-fg);
+    text-align: center;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    border-bottom: none;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
