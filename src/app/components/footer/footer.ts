@@ -34,8 +34,8 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
           <div class="footer-col">
             <h4>Legal</h4>
             <ul>
-              <li><a href="#">Termos de Uso</a></li>
-              <li><a href="#">Política de Privacidade</a></li>
+              <li><a href="https://doc-hosting.flycricket.io/minha-obra-terms-of-use/b4baaf4b-2bf8-444d-896b-6410a8aaee79/terms" target="_blank" rel="noopener noreferrer">Termos de Uso</a></li>
+              <li><a href="https://doc-hosting.flycricket.io/minha-obra-privacy-policy/9b79ce69-0387-4329-ab39-ac168a551437/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidade</a></li>
             </ul>
           </div>
 
